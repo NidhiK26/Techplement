@@ -133,7 +133,8 @@ public class QuizApplication {
                     List<String> options = Arrays.asList(sc.nextLine().split(","));
                     System.out.print("Enter correct option number: ");
                     int correctOption = sc.nextInt();
-                    sc.nextLine(); // Consume the leftover newline
+                    sc.nextLine(); 
+                    // Consume the leftover newline
                     manager.addQuestion(quizName, new Question(questionText, options, correctOption));
                     break;
 
